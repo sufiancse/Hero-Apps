@@ -18,14 +18,14 @@ const Barchart = ({ ratings }) => {
         <BarChart layout="vertical" data={ratings}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" />
-          <YAxis type="category" dataKey="name" />
+          <YAxis type="category" dataKey="name" reversed/>
           <Tooltip />
           <Legend />
 
           <Bar
             dataKey="count"
-            fill="#82ca9d"
-            activeBar={<Rectangle fill="gold" stroke="purple" />}
+            fill="#FF8811"
+            activeBar={<Rectangle fill="gray" stroke="purple" />}
           />
         </BarChart>
       </ResponsiveContainer>

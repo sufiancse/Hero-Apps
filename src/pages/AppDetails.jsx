@@ -9,7 +9,7 @@ import ErrorApps from "./ErrorApps";
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, load } = useApps();
-  
+
   if (load) return <Loading></Loading>;
 
   const appDetails = apps.find((app) => app.id === Number(id));
@@ -90,6 +90,7 @@ const AppDetails = () => {
 
       <div className="divider"></div>
 
+      <h1 className="text-[#001931] font-semibold text-2xl mb-4">Ratings</h1>
       <Barchart ratings={ratings}></Barchart>
 
       <div>
