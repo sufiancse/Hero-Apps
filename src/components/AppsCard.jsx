@@ -16,9 +16,9 @@ const AppsCard = ({ app }) => {
     return num.toString();
   }
   return (
-    <div>
+    <div className="px-5">
       <Link to={"/app-details/sf"}>
-        <div className="card bg-base-100 border shadow-sm p-4">
+        <div className="card bg-base-100  shadow-md hover:border border-gray-400 hover:scale-105 transform ease-in-out p-4">
           <figure className="h-64 overflow-hidden">
             <img
               src={image}

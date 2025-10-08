@@ -3,7 +3,8 @@ import MainLayout from "../layouts/MainLayout";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import AppDetails from "../pages/AppDetails";
-import ErrorApps from "../pages/ErrorApps";
+
+import Apps from "../pages/Apps";
 
 const Router = createBrowserRouter([
   {
@@ -17,14 +18,14 @@ const Router = createBrowserRouter([
         Component: Home,
       },
       {
-        path:'/abu',
-        Component:<ErrorApps></ErrorApps>
+        path: "/apps",
+        Component: Apps,
       },
       {
-        path:'/app-details/:id',
-        errorElement: ErrorApps,
-        Component: AppDetails
-      }
+        path: "/app-details/:id",
+
+        Component: AppDetails,
+      },
     ],
   },
 ]);

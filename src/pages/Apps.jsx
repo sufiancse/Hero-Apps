@@ -1,11 +1,12 @@
-import React from "react";
-import AppsCard from "./AppsCard";
-import useApps from "../hooks/useApps";
-import Loading from "./Loading";
 
-const TrendingApps = () => {
+import AppsCard from "../components/AppsCard";
+import Loading from "../components/Loading";
+import useApps from "../hooks/useApps";
+
+
+
+const Apps = () => {
   const { apps, load } = useApps();
-  const homePageApps = apps.splice(0, 8);
 
   return (
     <div className="my-10 max-w-7xl mx-auto">
@@ -21,7 +22,7 @@ const TrendingApps = () => {
         <Loading></Loading>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ">
-          {homePageApps.map((app) => (
+          {apps.map((app) => (
             <AppsCard key={app.id} app={app}></AppsCard>
           ))}
         </div>
@@ -30,4 +31,4 @@ const TrendingApps = () => {
   );
 };
 
-export default TrendingApps;
+export default Apps;
