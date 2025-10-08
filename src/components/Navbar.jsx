@@ -42,7 +42,7 @@ const Navbar = () => {
           </div>
           <Link to={'/'} className="text-xl flex items-center font-bold bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent gap-2">
             <img src={logo} alt="Website Logo" className="w-10" />
-            HERO.IO
+            DEV APPS
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

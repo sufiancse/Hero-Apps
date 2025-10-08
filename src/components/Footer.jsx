@@ -1,16 +1,15 @@
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
     <div className="bg-[#001931]">
-      <footer className="max-w-7xl mx-auto footer sm:footer-horizontal  text-neutral-content items-center p-4">
-        <aside className="grid-flow-col items-center">
-          
-            <img src={logo} alt="Website Logo" className='w-10'/>
-          
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+      <footer className="max-w-7xl mx-auto flex  justify-between  text-neutral-content items-center p-4">
+        <aside className="flex gap-1 items-center">
+          <img src={logo} alt="Website Logo" className="w-10" />
+
+          <p className="font-bold">DEV APPS</p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav className="flex gap-4 ">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +45,12 @@ const Footer = () => {
           </a>
         </nav>
       </footer>
+      <div className="max-w-7xl mx-auto">
+        <div className="border border-gray-600"></div>
+        <p className="text-white text-center py-6">
+          Copyright © {new Date().getFullYear()} - All right reserved
+        </p>
+      </div>
     </div>
   );
 };
