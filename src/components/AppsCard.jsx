@@ -3,7 +3,7 @@ import { DownloadIcon, StarIcon } from "lucide-react";
 import { Link } from "react-router";
 
 const AppsCard = ({ app }) => {
-  const { title, image, downloads, ratingAvg } = app;
+  const { title, image, downloads, ratingAvg,id } = app;
   // console.log(title, image,downloads,ratingAvg);
   function formatDownloads(num) {
     if (num >= 1000000) {
@@ -17,7 +17,7 @@ const AppsCard = ({ app }) => {
   }
   return (
     <div className="">
-      <Link to={"/app-details/sf"}>
+      <Link to={`/app-details/${id}`}>
         <div className="card bg-base-100  shadow-md hover:border border-gray-400 hover:scale-105 transform ease-in-out p-4">
           <figure className="h-64 overflow-hidden">
             <img

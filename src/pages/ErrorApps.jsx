@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 const ErrorApps = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar></Navbar>
+      
       <div className="flex-1 bg-gray-100 p-20 ">
         <div className="flex flex-col items-center justify-center">
           <img src={ErrorApp} className="max-w-[300px] mx-auto mb-6" alt="" />
@@ -27,7 +27,7 @@ const ErrorApps = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+     
     </div>
   );
 };
