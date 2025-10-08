@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
+import AppDetails from "../pages/AppDetails";
+import ErrorApps from "../pages/ErrorApps";
 
 const Router = createBrowserRouter([
   {
@@ -14,6 +16,11 @@ const Router = createBrowserRouter([
         index: true,
         Component: Home,
       },
+      {
+        path:'/app-details/:id',
+        errorElement: ErrorApps,
+        Component: AppDetails
+      }
     ],
   },
 ]);

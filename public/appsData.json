@@ -1,0 +1,454 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/25JhpZOpGjeylyi48h01bfre0mwmgjx-oAZ07H46SM1kFsfPNXdJwAQRaS4Fgj8xV98g=s256-rw",
+    "title": "Learn Web Development",
+    "companyName": "DevAcademy Ltd.",
+    "id": 101,
+    "description": "Learn Web Development helps users master frontend and backend web technologies. You’ll go through HTML, CSS, JavaScript, React, Node.js, Express, databases, REST APIs and deployment. There are interactive quizzes, code editors, projects, and real-world assignments. Suitable for beginners to intermediate. Weekly challenges and community support included.",
+    "size": 45.2,
+    "reviews": 125000,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 87000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/P6Ixu0T8hx2x80aCURUdcMW8poVuA4J0JQf8fw-XEa_NgzNSGUC1SNLkbT2ioo0lXfkC=s256-rw",
+    "title": "Sololearn: Learn to code",
+    "companyName": "SoloLearn Inc.",
+    "id": 102,
+    "description": "Sololearn offers bite-sized interactive coding lessons across many languages (Python, Java, C#, JavaScript, etc.). The app includes code playgrounds, community challenges, daily coding tasks, and peer discussions. Ideal for both beginners and experienced coders to sharpen skills. Leaderboards and certificates are available.",
+    "size": 30.8,
+    "reviews": 980000,
+    "ratingAvg": 4.5,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 813000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/bvirX9dj-9ce3Fds60uKArPcZ8Zb75ZlKbBFeMmbW5Xs9UBkHlmYoVo8-x0m4pGRo4U=s256-rw",
+    "title": "Learn Python Programming",
+    "companyName": "CodeMaster Apps",
+    "id": 103,
+    "description": "Learn Python Programming focuses on teaching Python from the ground up. You’ll start from basics like variables, loops, conditionals, then move on to functions, modules, object-oriented programming, file handling, and libraries like pandas and numpy. There are interactive coding tasks, mini-projects, and quizzes to reinforce learning. Suitable for beginners and intermediate users alike.",
+    "size": 28.0,
+    "reviews": 210000,
+    "ratingAvg": 4.7,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 168000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/3rrK9eFerLiTtl6kb288hSiae1stp4EehCqsgpQuD0O1BWGcwuULvLCsKZDrRwTg8Ow=s256-rw",
+    "title": "DataCamp | Data, AI and Coding",
+    "companyName": "DataCamp Inc.",
+    "id": 104,
+    "description": "DataCamp provides courses in data science, machine learning, statistics, and programming. Inside the app you’ll find lessons on Python, R, SQL, and interactive notebooks. Projects, challenges, and skill tracks help consolidate knowledge. It’s good for learners who want to apply data & AI concepts with hands-on coding and practice.",
+    "size": 55.5,
+    "reviews": 320000,
+    "ratingAvg": 4.8,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 260000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/GguSSKNcZdGw624xa9VqH71Sy6B12bHdlINY0RN_CltpzE51NgdFWkxesZuI4joVDrM=s256-rw",
+    "title": "Coursera: Grow your career",
+    "companyName": "Coursera Inc.",
+    "id": 105,
+    "description": "Coursera’s mobile app lets you access thousands of courses from top universities & organizations. You can watch lectures, do quizzes, assignments, and download materials offline. Certificates are available upon course completion. Covers a broad range of topics like tech, business, arts, data science, etc. Excellent for lifelong learners and professionals.",
+    "size": 60.3,
+    "reviews": 450000,
+    "ratingAvg": 4.6,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 353000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ZI21NMObsjB7DbPU_EXRymHJL3HQpfsrB2N4CWb-diXm4xjl_13mmetYQZvcpgGf-64=s256-rw",
+    "title": "GeeksforGeeks - Learn To Code",
+    "companyName": "GeeksforGeeks",
+    "id": 106,
+    "description": "GeeksforGeeks app brings computer science tutorials, interview preparation, and programming practice in one place. You’ll find DSA, algorithms, coding challenges, and quizzes. Great for job seekers and competitive programmers looking to sharpen their coding skills.",
+    "size": 38.7,
+    "reviews": 300000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 190000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/edmBVFMS9fhuZycs2I6jCO7vGxhH434upOADR2e3x5Wi_s6Et4vcFY0gYs0q_B0qFS8=s256-rw",
+    "title": "Programming Hero: Coding Fun",
+    "companyName": "Programming Hero Ltd.",
+    "id": 107,
+    "description": "Programming Hero makes coding fun and interactive. Learn HTML, CSS, JavaScript, and Python through gamified lessons and build projects like websites and apps. It’s perfect for beginners who love learning by doing.",
+    "size": 52.4,
+    "reviews": 500000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 90000 },
+      { "name": "5 star", "count": 367000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/AZW3Q9fPfsjhJncEpiAEsfteaz3pep88Tfy2-sjjf4Ib7wfM0M6B0TcRuW3-JJsS2oVz=s256-rw",
+    "title": "Pluralsight: Learn Tech Skills",
+    "companyName": "Pluralsight LLC",
+    "id": 108,
+    "description": "Pluralsight offers advanced courses for tech professionals in software development, IT, and data. Features include expert-led video lessons, skill paths, assessments, and offline viewing. Ideal for upskilling and career growth.",
+    "size": 64.1,
+    "reviews": 150000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 40000 },
+      { "name": "5 star", "count": 93000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/yzjoC50KOfHh5pvp71rXYPhjduQS5HTH7C0WcAbz8gIbHtEAF1tkeNt6B3e4QXykAHU=s256-rw",
+    "title": "Learn Python",
+    "companyName": "LearnCoding Labs",
+    "id": 109,
+    "description": "Learn Python provides beginner-friendly lessons, coding practice, and quizzes. Covers all essentials including data types, loops, functions, OOP, and error handling. Great for students and hobbyists starting their coding journey.",
+    "size": 29.6,
+    "reviews": 280000,
+    "ratingAvg": 4.6,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 201000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/briKqxHu8OGjLXh0HakKR5uao0uO0V5qvsa0zNR9HKgWzIS51zNTCGux85od5f9BYwA=s256-rw",
+    "title": "Coding X : Learn Python, Java",
+    "companyName": "CodingX Academy",
+    "id": 110,
+    "description": "Coding X helps users learn popular languages like Python, Java, and C++. Lessons are interactive and beginner-focused with examples, quizzes, and exercises to solidify concepts.",
+    "size": 33.1,
+    "reviews": 150000,
+    "ratingAvg": 4.7,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 40000 },
+      { "name": "5 star", "count": 98000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/lZzyTE3W9T9qNSdGG8Z3RA0GzlU5bX5hSYrcw6tfu2uK1Wf_9eqV-x-aJ0WMnVe1DQ=s256-rw",
+    "title": "PictoBlox - Block Coding & AI",
+    "companyName": "STEMpedia",
+    "id": 111,
+    "description": "PictoBlox is a graphical programming app for kids and beginners to learn coding and AI. Build games, animations, and projects using drag-and-drop blocks. Includes AI extensions for face recognition, voice commands, and IoT projects.",
+    "size": 68.2,
+    "reviews": 50000,
+    "ratingAvg": 4.1,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 25000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/3E-AjwKJC4YA0_bXkQSW2KzGQeIZWh-8qeaeJ5kYdvHA8rz29KJ1-rCD6QX3vYKAGKj0=s256-rw",
+    "title": "Programming Hub: Learn to code",
+    "companyName": "Programming Hub",
+    "id": 112,
+    "description": "Programming Hub teaches programming through visual lessons and code snippets. Supports Python, Java, C, C++, HTML, CSS, and more. Certificates are provided after course completion.",
+    "size": 40.4,
+    "reviews": 410000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 324000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/j7y6KPZzccon-7d4hfSHf_elLUcTD_j4NpfMq9K3TqncTKY82zdvg3m9FoMsPZ-j5A=s256-rw",
+    "title": "Learn HTML",
+    "companyName": "WebGrow Labs",
+    "id": 113,
+    "description": "Learn HTML is a simple and beginner-friendly app that teaches HTML fundamentals, tags, attributes, and structure. Includes examples, syntax highlighting, and quizzes.",
+    "size": 18.7,
+    "reviews": 80000,
+    "ratingAvg": 4.7,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 59200 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/TKeeMsK58GQjE6zzcI5PMWazgYMiJpmEPVUKfDrmXPtUqmBxlZ1hyG62I9YV9v2SGw=s256-rw",
+    "title": "Learn R Programming",
+    "companyName": "DataLearn Co.",
+    "id": 114,
+    "description": "Learn R Programming covers data manipulation, visualization, and statistics. Ideal for data analysts and students learning R. Includes examples, challenges, and projects.",
+    "size": 31.9,
+    "reviews": 45000,
+    "ratingAvg": 4.4,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 29500 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/QOpn8VzGHmWrRsZnKOgmRtOJH07KbM_N14HlFhoXmofLW-2jzF6Ki9FBPbSiUv9LHyw=s256-rw",
+    "title": "Enki: Learn to code",
+    "companyName": "Enki.com",
+    "id": 115,
+    "description": "Enki provides bite-sized lessons on coding, data science, and productivity. Daily practice reminders, insights, and quizzes help users stay consistent.",
+    "size": 22.5,
+    "reviews": 110000,
+    "ratingAvg": 4.5,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 76500 }
+    ]
+  },
+  
+    {
+      "id": 116,
+      "title": "Learn App Development",
+      "companyName": "Coding and Programming",
+      "description": "Learn App Development is a beginner-friendly app that helps you understand Android and iOS app development. Covers Flutter, React Native, and native app concepts with tutorials and examples.",
+      "image": "https://play-lh.googleusercontent.com/SnwyXhGrbriW5J7N2LFsV3egJ8fddvbeIS2HVBroS2beRhdy-aiYHczRNVODSsluY_Pg=s256-rw",
+      "size": 22.5,
+      "reviews": 140000,
+      "ratingAvg": 4.3,
+      "downloads": 5000000,
+      "ratings": [
+        { "name": "1 star", "count": 4000 },
+        { "name": "2 star", "count": 6000 },
+        { "name": "3 star", "count": 20000 },
+        { "name": "4 star", "count": 50000 },
+        { "name": "5 star", "count": 60000 }
+      ]
+    },
+    {
+      "id": 117,
+      "title": "Mimo: Learn Coding/Programming",
+      "companyName": "Mimohello GmbH",
+      "description": "Mimo helps you learn programming through interactive lessons and real-world projects. Covers Python, JavaScript, HTML, and SQL. Daily goals and progress tracking make learning fun.",
+      "image": "https://play-lh.googleusercontent.com/Km71TlsWxC93ElRjgo6Hta8IJ2VN4OVXDFrLxwURddcVy7YqONy491ug7a3ZOsySULQ=s256-rw",
+      "size": 58.4,
+      "reviews": 970000,
+      "ratingAvg": 4.6,
+      "downloads": 30000000,
+      "ratings": [
+        { "name": "1 star", "count": 12000 },
+        { "name": "2 star", "count": 9000 },
+        { "name": "3 star", "count": 25000 },
+        { "name": "4 star", "count": 100000 },
+        { "name": "5 star", "count": 824000 }
+      ]
+    },
+    {
+      "id": 118,
+      "title": "Learn C++",
+      "companyName": "Coding and Programming",
+      "description": "Learn C++ provides tutorials and examples to master C++ programming. From basics to advanced concepts like OOP, pointers, and file handling. Ideal for students and beginners.",
+      "image": "https://play-lh.googleusercontent.com/xRXmSJR3qZiXVboaZhDqhU9AQsvgefH6C7RQqamfLUwnSqmcOxu3yNkd7tND2V49gAM=s256-rw",
+      "size": 25.3,
+      "reviews": 210000,
+      "ratingAvg": 4.8,
+      "downloads": 10000000,
+      "ratings": [
+        { "name": "1 star", "count": 2000 },
+        { "name": "2 star", "count": 3000 },
+        { "name": "3 star", "count": 8000 },
+        { "name": "4 star", "count": 30000 },
+        { "name": "5 star", "count": 167000 }
+      ]
+    },
+    {
+      "id": 119,
+      "title": "Learn C++",
+      "companyName": "Learn Coding Apps",
+      "description": "A complete C++ learning app with examples, notes, and quizzes. Understand syntax, classes, inheritance, and STL with real examples.",
+      "image": "https://play-lh.googleusercontent.com/K-GWbooc9bRDmf7KkVFn5aPOWq5cI9XZ-rMhrl0aIgBcbq00aMiU07G7xXWRfvG7ROw=s256-rw",
+      "size": 24.1,
+      "reviews": 120000,
+      "ratingAvg": 4.5,
+      "downloads": 5000000,
+      "ratings": [
+        { "name": "1 star", "count": 4000 },
+        { "name": "2 star", "count": 5000 },
+        { "name": "3 star", "count": 12000 },
+        { "name": "4 star", "count": 30000 },
+        { "name": "5 star", "count": 69000 }
+      ]
+    },
+    {
+      "id": 120,
+      "title": "Learn Java",
+      "companyName": "Coding and Programming",
+      "description": "Learn Java programming with step-by-step tutorials, programs, and examples. Covers core Java, OOP, collections, and file handling.",
+      "image": "https://play-lh.googleusercontent.com/KR2OSCsAdzIwVMd3Ub8Cqcx4lrT5aIvmAQIV95bGAoFzUVp5r8y6jhiddcKLTlnLIA=s256-rw",
+      "size": 30.5,
+      "reviews": 180000,
+      "ratingAvg": 4.7,
+      "downloads": 10000000,
+      "ratings": [
+        { "name": "1 star", "count": 2000 },
+        { "name": "2 star", "count": 3000 },
+        { "name": "3 star", "count": 10000 },
+        { "name": "4 star", "count": 40000 },
+        { "name": "5 star", "count": 125000 }
+      ]
+    },
+    {
+      "id": 121,
+      "title": "Learn C Programming",
+      "companyName": "Coding and Programming",
+      "description": "Learn C programming with interactive lessons, code examples, and exercises. Covers loops, arrays, pointers, and file handling.",
+      "image": "https://play-lh.googleusercontent.com/WCwcq3DvY0pbaTqUfU1ToySB2s5mmqAUxcLcTN3Y2J5l-sDwS2L2z6_qmCYNX9wdXg=s256-rw",
+      "size": 22.7,
+      "reviews": 110000,
+      "ratingAvg": 4.5,
+      "downloads": 5000000,
+      "ratings": [
+        { "name": "1 star", "count": 3000 },
+        { "name": "2 star", "count": 4000 },
+        { "name": "3 star", "count": 10000 },
+        { "name": "4 star", "count": 30000 },
+        { "name": "5 star", "count": 63000 }
+      ]
+    },
+    {
+      "id": 122,
+      "title": "Learn Blockchain Programming",
+      "companyName": "Coding and Programming",
+      "description": "Learn Blockchain Programming provides lessons on blockchain basics, smart contracts, and decentralized apps. Includes Ethereum and Solidity tutorials.",
+      "image": "https://play-lh.googleusercontent.com/5MqRck5EnfTd3IebHttWIMiBKzmYl6sCc3VU4y_-TLRB35YiRaUIOgtTa9xHuKPq8Io=s256-rw",
+      "size": 29.4,
+      "reviews": 80000,
+      "ratingAvg": 4.5,
+      "downloads": 2000000,
+      "ratings": [
+        { "name": "1 star", "count": 1500 },
+        { "name": "2 star", "count": 2000 },
+        { "name": "3 star", "count": 6000 },
+        { "name": "4 star", "count": 20000 },
+        { "name": "5 star", "count": 50500 }
+      ]
+    },
+    {
+      "id": 123,
+      "title": "CodeGym: learn Java",
+      "companyName": "CodeGym CC",
+      "description": "CodeGym is a gamified platform to learn Java programming. Solve interactive tasks, get instant feedback, and level up your coding skills.",
+      "image": "https://play-lh.googleusercontent.com/oR-8P4gCy5uht8NZ2rk6wCt7WhwKwneGjwPUJCo_4ptenLtgSQCnrvXfa8ZRC9oJkFZJ=s256-rw",
+      "size": 52.6,
+      "reviews": 95000,
+      "ratingAvg": 4.4,
+      "downloads": 3000000,
+      "ratings": [
+        { "name": "1 star", "count": 2000 },
+        { "name": "2 star", "count": 2500 },
+        { "name": "3 star", "count": 8000 },
+        { "name": "4 star", "count": 20000 },
+        { "name": "5 star", "count": 62500 }
+      ]
+    },
+    {
+      "id": 124,
+      "title": "Great Learning: Online Courses",
+      "companyName": "Great Learning",
+      "description": "Great Learning app offers free and paid online courses with certificates. Learn data science, AI, ML, and software development from industry experts.",
+      "image": "https://play-lh.googleusercontent.com/__khQwKnFNT-XLg_3jEZiL2fAAzEunNoPh_Q8qd-c3Hq9kX_KL0vR7vnWOM6vBZCdBy0=s256-rw",
+      "size": 41.9,
+      "reviews": 240000,
+      "ratingAvg": 4.7,
+      "downloads": 10000000,
+      "ratings": [
+        { "name": "1 star", "count": 3000 },
+        { "name": "2 star", "count": 4000 },
+        { "name": "3 star", "count": 12000 },
+        { "name": "4 star", "count": 60000 },
+        { "name": "5 star", "count": 161000 }
+      ]
+    },
+    {
+      "id": 125,
+      "title": "Build Your First Game",
+      "companyName": "Coding and Programming",
+      "description": "Learn how to build your first game from scratch. Covers basic game development concepts using Unity and C#. Perfect for beginners.",
+      "image": "https://play-lh.googleusercontent.com/4wVSAv5vbfvFep4shbVh1jOj4RN6dkterEvgZYVnMXnoXm9XxEhqN99kCGXN4f2jKg=s256-rw",
+      "size": 28.7,
+      "reviews": 60000,
+      "ratingAvg": 4.2,
+      "downloads": 1000000,
+      "ratings": [
+        { "name": "1 star", "count": 2000 },
+        { "name": "2 star", "count": 2500 },
+        { "name": "3 star", "count": 7000 },
+        { "name": "4 star", "count": 15000 },
+        { "name": "5 star", "count": 33500 }
+      ]
+    }
+  
+]
