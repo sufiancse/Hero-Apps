@@ -51,6 +51,11 @@ const AppDetails = () => {
       </div>
 
       <div className="divider"></div>
+
+      <div>
+        <h1 className="font-semibold text-2xl text-[#001931]">Description</h1>
+        <p className="text-[#627382]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, nobis? Iusto modi quos libero suscipit? Ab nostrum atque dignissimos earum omnis, autem laborum iusto sequi, eaque nemo quaerat commodi vitae.</p>
+      </div>
     </div>
   );
 };
