@@ -40,7 +40,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link className="text-xl flex items-center font-bold gap-2">
+          <Link to={'/'} className="text-xl flex items-center font-bold bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent gap-2">
             <img src={logo} alt="Website Logo" className="w-10" />
             HERO.IO
           </Link>
@@ -59,12 +59,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to={"/"} className="btn">
-            <span>
-              <GithubIcon></GithubIcon>
-            </span>
-            Contribution
-          </Link>
+          <a href="https://github.com/sufiancse" target="_blank">
+            <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+              <span>
+                <GithubIcon></GithubIcon>
+              </span>
+              Contribution
+            </button>
+          </a>
         </div>
       </div>
     </div>
