@@ -2,6 +2,7 @@ import React from "react";
 import AppsCard from "./AppsCard";
 import useApps from "../hooks/useApps";
 import Loading from "./Loading";
+import { Link } from "react-router";
 
 const TrendingApps = () => {
   const { apps, load } = useApps();
@@ -26,6 +27,13 @@ const TrendingApps = () => {
           ))}
         </div>
       )}
+      <div className="flex justify-center items-center mt-10">
+        <Link to={"/apps"}>
+          <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+            See All
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

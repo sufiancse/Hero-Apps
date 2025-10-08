@@ -1,28 +1,52 @@
-
+import { useState } from "react";
 import AppsCard from "../components/AppsCard";
 import Loading from "../components/Loading";
 import useApps from "../hooks/useApps";
 
-
-
 const Apps = () => {
   const { apps, load } = useApps();
+  const [search, setSearch] = useState("");
+
+  const searchValue = search.trim().toLowerCase();
+
+  const searchApps = searchValue
+    ? apps.filter((app) => app.title.toLowerCase().includes(searchValue))
+    : apps;
 
   return (
-    <div className="my-10 max-w-7xl mx-auto">
+    <div className="my-10 max-w-7xl mx-auto px-5">
       <div className="text-center mb-10">
         <h1 className="font-bold text-5xl text-[#001931] mb-4">
-          Trending Apps
+          Our All Applications
         </h1>
         <p className="text-[#627382]">
-          Explore All Trending Apps on the Market developed by us
+          Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
+
+      <div className="flex justify-between items-center mb-4">
+        <p className="text-[#001931] font-semibold text-2xl">
+          ({searchApps.length}) Apps Found
+        </p>
+        <label className="input bg-gray-100">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="search apps"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </label>
+      </div>
+
       {load ? (
         <Loading></Loading>
+      ) : !searchApps.length ? (
+        <p className="font-bold text-3xl text-center text-gray-400"> No Apps Found</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ">
-          {apps.map((app) => (
+          {searchApps.map((app) => (
             <AppsCard key={app.id} app={app}></AppsCard>
           ))}
         </div>
