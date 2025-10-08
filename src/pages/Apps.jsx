@@ -24,7 +24,7 @@ const Apps = () => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex justify-between items-center mb-6">
         <p className="text-[#001931] font-semibold text-2xl">
           ({searchApps.length}) Apps Found
         </p>
@@ -43,7 +43,20 @@ const Apps = () => {
       {load ? (
         <Loading></Loading>
       ) : !searchApps.length ? (
-        <p className="font-bold text-3xl text-center text-gray-400"> No Apps Found</p>
+        <div>
+          <p className="font-bold text-3xl text-center text-gray-400">
+            {" "}
+            No Apps Found
+          </p>{" "}
+          <div className="flex justify-center items-center mt-10">
+            <button
+              onClick={() => setSearch("")}
+              className="px-20 btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white"
+            >
+              See All Apps
+            </button>
+          </div>
+        </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ">
           {searchApps.map((app) => (

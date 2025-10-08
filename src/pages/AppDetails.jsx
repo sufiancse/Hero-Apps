@@ -1,14 +1,23 @@
 import { DownloadIcon, StarIcon, ThumbsUp } from "lucide-react";
-import app from "../assets/demo-app (1).webp";
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import Barchart from "../components/Barchart";
 import Loading from "../components/Loading";
 import ErrorApps from "./ErrorApps";
+import { loadInstallationList, updateList } from "../storage/localStorage";
+import { useEffect, useState } from "react";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, load } = useApps();
+  const [installed, setInstalled] = useState(false);
+
+  useEffect(() => {
+    const installedApps = loadInstallationList();
+
+    const isInstalled = installedApps.some((a) => a.id === Number(id));
+    if (isInstalled) return setInstalled(true);
+  }, [id]);
 
   if (load) return <Loading></Loading>;
 
@@ -36,6 +45,11 @@ const AppDetails = () => {
       return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
     }
     return num;
+  };
+
+  const handleInstallation = () => {
+    updateList(appDetails);
+    setInstalled(true);
   };
 
   return (
@@ -82,8 +96,14 @@ const AppDetails = () => {
               </h1>
             </div>
           </div>
-          <button className="btn font-semibold text-xl text-white bg-green-500">
-            Install Now ({size} MB)
+          <button
+            onClick={handleInstallation}
+            disabled={installed}
+            className={`btn font-semibold text-xl text-white ${
+              installed ? "bg-gray-400 " : "bg-green-500"
+            }`}
+          >
+            {installed ? "Installed" : `Install Now (${size} MB)`}
           </button>
         </div>
       </div>

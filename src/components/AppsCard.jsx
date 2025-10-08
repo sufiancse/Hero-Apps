@@ -3,8 +3,8 @@ import { DownloadIcon, StarIcon } from "lucide-react";
 import { Link } from "react-router";
 
 const AppsCard = ({ app }) => {
-  const { title, image, downloads, ratingAvg,id } = app;
-  // console.log(title, image,downloads,ratingAvg);
+  const { title, image, downloads, ratingAvg, id } = app;
+
   function formatDownloads(num) {
     if (num >= 1000000) {
       return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
