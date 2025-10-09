@@ -29,10 +29,10 @@ const Installation = () => {
 
   const sortedItem = (() => {
     if (sort === "low-to-high") {
-      return [...installedList].sort((a, b) => a.size - b.size);
+      return [...installedList].sort((a, b) => a.downloads - b.downloads);
     }
     if (sort === "high-to-low") {
-      return [...installedList].sort((a, b) => b.size - a.size);
+      return [...installedList].sort((a, b) => b.downloads - a.downloads);
     }
     return installedList;
   })();
@@ -59,8 +59,8 @@ const Installation = () => {
             onChange={(e) => setSort(e.target.value)}
           >
             <option value="none">Sort By Size</option>
-            <option value="low-to-high">Low to High</option>
-            <option value="high-to-low">High to Low</option>
+            <option value="high-to-low">High-Low</option>
+            <option value="low-to-high">Low-High</option>
           </select>
         </label>
       </div>
