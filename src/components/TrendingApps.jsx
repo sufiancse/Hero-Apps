@@ -1,4 +1,3 @@
-import React from "react";
 import AppsCard from "./AppsCard";
 import useApps from "../hooks/useApps";
 import Loading from "./Loading";

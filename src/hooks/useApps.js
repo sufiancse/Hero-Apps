@@ -4,16 +4,26 @@ import { useEffect, useState } from "react";
 const useApps = () => {
   const [apps, setApps] = useState([]);
   const [load, setLoad] = useState(false);
-  const [error, setError] = useState(null);
+  
 
   useEffect(() => {
     setLoad(true);
     axios
       .get("/appsData.json")
-      .then((res) => setApps(res.data))
-      .catch((err) => setError(err))
-      .finally(()=> setLoad(false))
+      .then(res => {
+        setTimeout(() => {
+          setApps(res.data)
+          setLoad(false)
+        }, 800);
+      })
+      .catch((err) =>{
+        console.log(err)
+        setLoad(false)
+      })
+      // .then((res) => setApps(res.data))
+      // .catch((err) => setError(err))
+      // .finally(()=> setLoad(false))
   }, []);
-  return {apps,load,error}
+  return {apps,load}
 };
 export default useApps;

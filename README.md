@@ -1,16 +1,42 @@
-# React + Vite
+# 🚀 Dev Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 **Live Demo:** [Click Here](https://dev-apps.pages.dev/apps)
 
-Currently, two official plugins are available:
+**Dev Apps** is a modern web platform that showcases a collection of powerful and user-friendly applications developed by our team.  
+It allows users to explore, search, and view detailed information about each app, including ratings, reviews, downloads, and more — all in a clean and responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 **Smart Search:** Instantly find apps by typing their name.  
+- 📊 **Detailed Analytics:** Each app shows ratings, reviews, and download statistics.  
+- 💾 **Local Installation System:** Simulate installing apps using local storage.  
+- 📱 **Responsive Design:** Fully optimized for both mobile and desktop devices.  
+- ⚡ **Fast Loading:** Lightweight and efficient React hooks for smooth data handling.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|-------------|----------|
+| **React.js** | Frontend framework |
+| **React Router** | Navigation and routing |
+| **Tailwind CSS** | Styling and UI design |
+| **Lucide React** | Modern icons |
+| **Axios** | Data fetching |
+| **LocalStorage API** | Save installed apps |
+| **Vite** | Fast development and build tool |
+
+---
+
+## 📂 Folder Structure
+src/
+│
+├── components/ # Reusable UI components
+├── hooks/ # Custom React hooks
+├── pages/ # Main application pages
+├── storage/ # Local storage utilities
+├── assets/ # Images and static files
+└── layouts # Root component

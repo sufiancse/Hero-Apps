@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AppsCard from "../components/AppsCard";
 import Loading from "../components/Loading";
 import useApps from "../hooks/useApps";
@@ -7,11 +7,30 @@ const Apps = () => {
   const { apps, load } = useApps();
   const [search, setSearch] = useState("");
 
-  const searchValue = search.trim().toLowerCase();
+  const [isSearching, setIsSearching] = useState(false);
+  const [filteredApps, setFilteredApps] = useState(apps);
 
-  const searchApps = searchValue
-    ? apps.filter((app) => app.title.toLowerCase().includes(searchValue))
-    : apps;
+  useEffect(() => {
+    if (!apps || !apps.length) return;
+
+    setIsSearching(true);
+    const delay = setTimeout(() => {
+      const searchValue = search.trim().toLowerCase();
+      const searchApps = searchValue
+        ? apps.filter((app) => app.title.toLowerCase().includes(searchValue))
+        : apps;
+
+      setFilteredApps(searchApps);
+      setIsSearching(false);
+    }, 500);
+    return () => clearTimeout(delay)
+  }, [apps,search]);
+
+  // const searchValue = search.trim().toLowerCase();
+
+  // const searchApps = searchValue
+  //   ? apps.filter((app) => app.title.toLowerCase().includes(searchValue))
+  //   : apps;
 
   return (
     <div className="my-10 max-w-7xl mx-auto px-5">
@@ -26,7 +45,7 @@ const Apps = () => {
 
       <div className="flex justify-between items-center mb-6">
         <p className="text-[#001931] font-semibold text-2xl">
-          ({searchApps.length}) Apps Found
+          ({filteredApps.length}) Apps Found
         </p>
         <label className="input bg-gray-100">
           <input
@@ -40,9 +59,9 @@ const Apps = () => {
         </label>
       </div>
 
-      {load ? (
+      {load || isSearching ? (
         <Loading></Loading>
-      ) : !searchApps.length ? (
+      ) : !filteredApps.length ? (
         <div>
           <p className="font-bold text-3xl text-center text-gray-400">
             {" "}
@@ -59,7 +78,7 @@ const Apps = () => {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ">
-          {searchApps.map((app) => (
+          {filteredApps.map((app) => (
             <AppsCard key={app.id} app={app}></AppsCard>
           ))}
         </div>

@@ -1,15 +1,9 @@
-import React from "react";
+import logo from '../assets/logo.png'
 
-const Loading = () => {
-  return (
-    <div className="flex flex-row justify-center items-center h-[50vh]">
-      <span className="loading loading-bars loading-xs"></span>
-      <span className="loading loading-bars loading-sm"></span>
-      <span className="loading loading-bars loading-md"></span>
-      <span className="loading loading-bars loading-lg"></span>
-      <span className="loading loading-bars loading-xl"></span>
-    </div>
-  );
-};
+const Loading = () => (
+  <div className="flex flex-row justify-center items-center h-[30vh] font-bold text-5xl text-center text-gray-400">
+    <span className='flex justify-center items-center'>L <img src={logo} alt="" className='w-10 animate-spin' /> ading....</span>
+  </div>
+);
 
 export default Loading;
