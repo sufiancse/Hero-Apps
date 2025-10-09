@@ -20,20 +20,20 @@ const Banner = () => {
         </p>
         <div className="my-10">
           <a href="https://play.google.com/store/" target="_blank">
-            <button className="btn border border-gray-300 mr-4 ">
+            <button className="btn border border-gray-300 mr-4 text-xl text-[#001931] font-semibold">
               <img
                 src={googleImg}
-                className="w-7 text-xl text-[#001931] font-semibold"
+                className="w-7 "
                 alt=""
               />
               Google Play
             </button>
           </a>
           <a href="https://www.apple.com/app-store/" target="_blank">
-            <button className="btn border border-gray-300">
+            <button className="btn border border-gray-300 text-xl text-[#001931] font-semibold">
               <img
                 src={appleImg}
-                className="w-7 text-xl text-[#001931] font-semibold"
+                className="w-7"
                 alt=""
               />
               App Store

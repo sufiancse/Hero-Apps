@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import Barchart from "../components/Barchart";
@@ -102,7 +101,7 @@ const AppDetails = () => {
             onClick={handleInstallation}
             disabled={installed}
             className={`btn font-semibold text-xl text-white ${
-              installed ? "bg-gray-400 " : "bg-green-500"
+              installed ? "bg-gray-400 " : "bg-[#00D390]"
             }`}
           >
             {installed ? "Installed" : `Install Now (${size} MB)`}

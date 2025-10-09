@@ -25,10 +25,9 @@ const InstallationCard = ({ installedApps, setInstalledList }) => {
       type: "warning",
     });
   };
-  //
-  // flex justify-between items-center w-full md:justify-start md:gap-4
+
   return (
-    <div className="bg-white p-5 rounded-xl shadow-md flex flex-col sm:flex-row justify-between items-center mb-5 gap-5">
+    <div className="bg-white p-5 rounded-xl shadow-md flex flex-col sm:flex-row justify-between sm:items-center items-start mb-5 gap-5">
       <div className="w-full md:w-auto flex justify-start  md:justify-center items-center  gap-4">
         <img src={image} alt={title} className="w-20 object-cover rounded-xl" />
 
