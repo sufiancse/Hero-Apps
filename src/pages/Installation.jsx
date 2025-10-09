@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import InstallationCard from "../components/InstallationCard";
 import { loadInstallationList } from "../storage/localStorage";
 import { Link } from "react-router";
+import useApps from "../hooks/useApps";
+import Loading from "../components/Loading";
 
 const Installation = () => {
+  const {load} = useApps()
   const [installedList, setInstalledList] = useState(() =>
     loadInstallationList()
   );
-
   const [sort, setSort] = useState("none");
+  if(load) return <Loading></Loading>
 
   if (!installedList.length)
     return (
@@ -41,10 +44,10 @@ const Installation = () => {
     <div className="my-10 max-w-7xl mx-auto px-5">
       <div className="text-center mb-10">
         <h1 className="font-bold text-5xl text-[#001931] mb-4">
-          Our All Applications
+          Your Installed Apps
         </h1>
         <p className="text-[#627382]">
-          Explore All Apps on the Market developed by us. We code for Millions
+          Explore All Trending Apps on the Market developed by us
         </p>
       </div>
 

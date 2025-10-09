@@ -8,7 +8,7 @@ const TrendingApps = () => {
   const homePageApps = apps.splice(0, 8);
 
   return (
-    <div className="my-10 max-w-7xl mx-auto">
+    <div className="my-10 max-w-7xl mx-auto px-5">
       <div className="text-center mb-10">
         <h1 className="font-bold text-5xl text-[#001931] mb-4">
           Trending Apps
@@ -26,7 +26,7 @@ const TrendingApps = () => {
           ))}
         </div>
       )}
-      <div className="flex justify-center items-center mt-10">
+      <div className={`flex justify-center items-center mt-10 ${load?'hidden':'block'}`}>
         <Link to={"/apps"}>
           <button className="px-20 btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
             See All Apps

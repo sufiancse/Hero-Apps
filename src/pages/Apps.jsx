@@ -26,6 +26,8 @@ const Apps = () => {
     return () => clearTimeout(delay);
   }, [apps, search]);
 
+  
+
   return (
     <div className="my-10 max-w-7xl mx-auto px-5 md:px-0">
       <div className="text-center mb-10">

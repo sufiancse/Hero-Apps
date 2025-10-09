@@ -14,7 +14,7 @@ const useApps = () => {
         setTimeout(() => {
           setApps(res.data)
           setLoad(false)
-        }, 800);
+        }, 500);
       })
       .catch((err) =>{
         console.log(err)
