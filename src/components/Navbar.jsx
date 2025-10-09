@@ -1,6 +1,7 @@
 import { GithubIcon } from "lucide-react";
 import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -30,13 +31,40 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold"
+                      : "font-medium hover:text-purple-500"
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/apps"}>Apps</NavLink>
+                <NavLink
+                  to={"/apps"}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold"
+                      : "font-medium hover:text-purple-500"
+                  }
+                >
+                  Apps
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/installation"}>Installation</NavLink>
+                <NavLink
+                  to={"/installation"}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold"
+                      : "font-medium hover:text-purple-500"
+                  }
+                >
+                  Installation
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -90,9 +118,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <a href="https://github.com/sufiancse" target="_blank">
-            <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
-              <span>
-                <GithubIcon></GithubIcon>
+            <button className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white font-semibold">
+              <span className="text-xl">
+                <FaGithub></FaGithub>
               </span>
               Contribution
             </button>

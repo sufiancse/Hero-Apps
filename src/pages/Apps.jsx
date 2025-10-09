@@ -23,14 +23,8 @@ const Apps = () => {
       setFilteredApps(searchApps);
       setIsSearching(false);
     }, 500);
-    return () => clearTimeout(delay)
-  }, [apps,search]);
-
-  // const searchValue = search.trim().toLowerCase();
-
-  // const searchApps = searchValue
-  //   ? apps.filter((app) => app.title.toLowerCase().includes(searchValue))
-  //   : apps;
+    return () => clearTimeout(delay);
+  }, [apps, search]);
 
   return (
     <div className="my-10 max-w-7xl mx-auto px-5">

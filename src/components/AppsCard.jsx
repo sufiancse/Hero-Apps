@@ -1,4 +1,5 @@
-import { DownloadIcon, StarIcon } from "lucide-react";
+import { DownloadIcon } from "lucide-react";
+import { FaStar } from "react-icons/fa6";
 
 import { Link } from "react-router";
 
@@ -23,7 +24,7 @@ const AppsCard = ({ app }) => {
             <img
               src={image}
               className="w-full object-cover rounded-xl"
-              alt="Shoes"
+              alt={title}
             />
           </figure>
           <div className="">
@@ -33,8 +34,8 @@ const AppsCard = ({ app }) => {
               <div className="flex gap-2 py-2 px-3 rounded-sm font-medium bg-[#F1F5E8] text-[#00D390] ">
                 <DownloadIcon></DownloadIcon> {formatDownloads(downloads)}
               </div>
-              <div className="flex gap-2 py-2 px-3 rounded-sm font-medium bg-[#F1F5E8] text-[#FF8811] ">
-                <StarIcon></StarIcon>
+              <div className="flex items-center justify-center gap-2 py-2 px-3 rounded-sm font-medium bg-[#F1F5E8] text-[#FF8811] ">
+                <FaStar></FaStar>
                 {ratingAvg}
               </div>
             </div>

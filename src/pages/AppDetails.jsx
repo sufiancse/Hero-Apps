@@ -1,4 +1,4 @@
-import { DownloadIcon, StarIcon, ThumbsUp } from "lucide-react";
+
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import Barchart from "../components/Barchart";
@@ -6,6 +6,8 @@ import Loading from "../components/Loading";
 import ErrorApps from "./ErrorApps";
 import { loadInstallationList, updateList } from "../storage/localStorage";
 import { useEffect, useState } from "react";
+import { PiDownloadSimpleBold } from "react-icons/pi";
+import { FaStar, FaThumbsUp } from "react-icons/fa";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -71,24 +73,24 @@ const AppDetails = () => {
 
           <div className="flex justify-center items-center md:justify-start mb-5 gap-6 md:gap-20">
             <div className="text-center flex flex-col items-start  space-y-1">
-              <span>
-                <DownloadIcon></DownloadIcon>
-              </span>
+              <div className=" text-3xl text-[#00A97F]">
+                <PiDownloadSimpleBold></PiDownloadSimpleBold>
+              </div>
               <p className="text-[#001931]">Downloads</p>
               <h1 className="text-[#001931] font-bold text-4xl">
                 {formattingNumbers(downloads)}
               </h1>
             </div>
             <div className="text-center flex flex-col items-start space-y-1">
-              <span>
-                <StarIcon></StarIcon>
+              <span className="text-[#FF8811] text-3xl">
+                <FaStar></FaStar>
               </span>
               <p className="text-[#001931]">Average Ratings</p>
               <h1 className="text-[#001931] font-bold text-4xl">{ratingAvg}</h1>
             </div>
             <div className="text-center flex flex-col items-start space-y-1">
-              <span>
-                <ThumbsUp></ThumbsUp>
+              <span className="text-blue-500 text-3xl">
+                <FaThumbsUp></FaThumbsUp>
               </span>
               <p className="text-[#001931]">Total Reviews</p>
               <h1 className="text-[#001931] font-bold text-4xl">
