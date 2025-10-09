@@ -1,25 +1,37 @@
 import { DownloadIcon, StarIcon } from "lucide-react";
+import { removeList } from "../storage/localStorage";
+import { toast } from "react-toastify";
 
-const InstallationCard = ({ installedApps }) => {
-  const { image, title, downloads, ratingAvg, size } = installedApps;
-  function formatDownloads(num){
-    if(num >= 1000000){
-        return(num/1000000).toFixed(1).replace(/\.0$/,'') + "M"
+const InstallationCard = ({ installedApps, setInstalledList }) => {
+  const { image, title, downloads, ratingAvg, size, id } = installedApps;
+  function formatDownloads(num) {
+    if (num >= 1000000) {
+      return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
     }
-    if(num >= 1000){
-        return(num/1000).toFixed(1).replace(/\.0$/,'') + "K"
+    if (num >= 1000) {
+      return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
     }
-    return num
+    return num;
   }
+
+  const handleUninstall = () => {
+    removeList(id);
+    setInstalledList(previousData => previousData.filter(app => app.id !== id))
+    toast(`Uninstalled Apps: "${title}"`,{
+        position:"top-center",
+        type:"warning"
+    })
+  };
   return (
-    <div className="bg-white p-5 rounded-xl shadow-md flex justify-between items-center mb-5">
-      <div className="flex justify-center items-center gap-4">
+    <div className="bg-white p-5 rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center mb-5 gap-5 ">
+      <div className="flex  justify-center items-center gap-4">
         <img src={image} alt="" className="w-20 object-cover rounded-xl" />
         <div className="space-y-3">
           <h1 className="text-[#001931] font-medium text-lg">{title}</h1>
           <div className="flex gap-4">
             <div className="flex gap-1 text-[#00D390]">
-              <DownloadIcon></DownloadIcon> <span> {formatDownloads(downloads)}</span>
+              <DownloadIcon></DownloadIcon>{" "}
+              <span> {formatDownloads(downloads)}</span>
             </div>
             <div className="flex gap-1 text-[#FF8811]">
               <StarIcon></StarIcon> <span> {ratingAvg}</span>
@@ -30,7 +42,10 @@ const InstallationCard = ({ installedApps }) => {
           </div>
         </div>
       </div>
-      <button className="bg-green-500 text-white font-semibold text-xl btn">
+      <button
+        onClick={handleUninstall}
+        className="bg-green-500 text-white font-semibold text-xl btn"
+      >
         Uninstall
       </button>
     </div>

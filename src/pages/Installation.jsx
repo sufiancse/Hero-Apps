@@ -1,12 +1,42 @@
 import React, { useState } from "react";
 import InstallationCard from "../components/InstallationCard";
 import { loadInstallationList } from "../storage/localStorage";
+import { Link } from "react-router";
 
 const Installation = () => {
   const [installedList, setInstalledList] = useState(() =>
     loadInstallationList()
   );
-//   console.log(installedList);
+
+  const [sort, setSort] = useState("none");
+
+  if (!installedList.length)
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[50vh]">
+        <p className="font-bold text-3xl text-center text-gray-400">
+          {" "}
+          No Data Available
+        </p>{" "}
+        <div className="flex justify-center items-center mt-10">
+          <Link to={'/apps'}>
+            <button className="px-20 btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+              See All Apps
+            </button>
+          </Link>
+        </div>
+      </div>
+    );
+
+  const sortedItem = (() => {
+    if (sort === "low-to-high") {
+      return [...installedList].sort((a, b) => a.size - b.size);
+    }
+    if (sort === "high-to-low") {
+      return [...installedList].sort((a, b) => b.size - a.size);
+    }
+    return installedList;
+  })();
+
   return (
     <div className="my-10 max-w-7xl mx-auto px-5">
       <div className="text-center mb-10">
@@ -19,9 +49,15 @@ const Installation = () => {
       </div>
 
       <div className="flex justify-between items-center mb-4">
-        <p className="text-[#001931] font-semibold text-2xl">{installedList.length} Apps Found</p>
+        <p className="text-[#001931] font-semibold text-2xl">
+          {sortedItem.length} Apps Found
+        </p>
         <label className="">
-          <select className="select select-border bg-gray-100">
+          <select
+            className="select select-border bg-gray-100"
+            value={sort}
+            onChange={(e) => setSort(e.target.value)}
+          >
             <option value="none">Sort By Size</option>
             <option value="low-to-high">Low to High</option>
             <option value="high-to-low">High to Low</option>
@@ -29,9 +65,13 @@ const Installation = () => {
         </label>
       </div>
 
-      {
-        installedList.map(installedApps => <InstallationCard key={installedApps.id} installedApps={installedApps}></InstallationCard>)
-      }
+      {sortedItem.map((installedApps) => (
+        <InstallationCard
+          key={installedApps.id}
+          installedApps={installedApps}
+          setInstalledList={setInstalledList}
+        ></InstallationCard>
+      ))}
     </div>
   );
 };
